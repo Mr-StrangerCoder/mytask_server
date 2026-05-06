@@ -4,7 +4,7 @@ const protect = async (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;
 
-    console.log(authHeader ,"11111111111111111111111")
+    // console.log(authHeader ,"11111111111111111111111")
 
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
       return res.status(401).json({ message: 'No token, authorization denied' });
